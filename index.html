@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Currency Converter</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        </head>
+        <body>
+
+            <div ng-app="myApp" ng-controller="myCtrl" data-ng-init="getCurrencies()" style="font-size:12px;">
+                <h1 style='margin-top:30px;'>Currency Converter</h1>
+                <form class="form-inline" ng-submit = "submit()"  style='margin: 20px 0px 14px 10px'>
+                    <input class="col-2" type="text" value="1" ng-model="currentValue" placeholder="Enter Amount">
+                    <h3 style='margin:0px 4px 0px 4px'>From</h3>
+                    <select class="form-control col-3" ng-model="prevCurr">
+                        <option ng-repeat="x in currencies" value="{{x.id}}">{{x.currencyName}}</option>
+                    </select>
+                    <h3 style='margin: 0px 4px 0px 4px;'>To</h3>
+                    <select class="form-control col-3" ng-model="newCurr">
+                        <option  ng-repeat="x in currencies" value="{{x.id}}">{{x.currencyName}}</option>
+                    </select>
+                    <input class="form-control col-2" type="submit" value="Convert">
+                </form>
+                
+                <h3 style="margin-top:20px;">ANSWER</h3>
+                <h4 style="background-color:grey;color:red;">{{answer}}</h4>
+            </div>
+        
+            <!--scripts-->
+            <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+            <script src="main.js"></script>
+        </body>
+    </html>
+
