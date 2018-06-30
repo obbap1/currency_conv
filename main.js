@@ -29,7 +29,7 @@ app.controller('myCtrl',($scope,$http)=>{
     }
 
     $scope.getCurrencies = ()=>{
-        console.log('hian');
+        
         $http({
             method : "GET",
             url : "https://free.currencyconverterapi.com/api/v5/currencies"

@@ -1,0 +1,25 @@
+{
+  "name": "alcnew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "gulp-connect": "^5.5.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obbap1/currency_conv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obbap1/currency_conv/issues"
+  },
+  "homepage": "https://github.com/obbap1/currency_conv#readme"
+}
